@@ -1,0 +1,10 @@
+{
+    "alias": "media",
+    "name": "Media",
+    "author": "xcms",
+    "description": "This is the description for the Media module.",
+    "namespace": "Xcms\\Media",
+    "version": "1.0",
+    "autoload": "psr-4",
+    "enabled": true
+}
