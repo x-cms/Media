@@ -16,7 +16,7 @@ class MediaController extends SystemController
 
         $this->middleware(function (Request $request, $next) {
 
-            menu()->setActiveItem('pages');
+            menu()->setActiveItem('media');
 
             $this->breadcrumbs
                 ->addLink('内容管理')
@@ -36,7 +36,7 @@ class MediaController extends SystemController
     public function index(Request $request)
     {
         if($request->isMethod('post')){
-            $handler = $request->headers->get('x-october-request-handler');
+            $handler = $request->headers->get('x-cms-request-handler');
             return $this->manager->$handler();
         }
         $this->setPageTitle('媒体管理');

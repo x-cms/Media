@@ -479,7 +479,11 @@ class MediaManager
 
         $this->cropAndInsertButton = Request::get('cropAndInsertButton', $this->cropAndInsertButton);
 
-        return view('popup-body')->render();
+        $this->prepareVars();
+
+        return [
+          'result' => view('media::partials.popup-body')->render()
+        ];
     }
 
     public function onLoadImageCropPopup()
@@ -500,7 +504,7 @@ class MediaManager
         $dimensions = $urlAndSize['dimensions'];
         $originalRatio = round($width / $height, 5);
 
-        return view('image-crop-popup-body', compact(
+        return view('media::partials.image-crop-popup-body', compact(
             'currentSelectionMode',
             'currentSelectionWidth',
             'currentSelectionHeight',
@@ -1014,7 +1018,7 @@ class MediaManager
 
     protected function getBrokenImagePath()
     {
-        return dirname(__DIR__) . '/assets/images/broken-thumbnail.gif';
+        return public_path('/vendor/core/media/images/broken-thumbnail.gif');
     }
 
     protected function getBrokenImageHash()

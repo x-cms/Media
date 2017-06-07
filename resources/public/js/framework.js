@@ -90,7 +90,7 @@ if (window.jQuery === undefined)
         }
 
         var requestOptions = {
-            url: window.location.href,
+            url: '/admin/media',
             context: context,
             headers: requestHeaders,
             success: function(data, textStatus, jqXHR) {

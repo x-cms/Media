@@ -19,7 +19,7 @@ div[data-control="media-manager"] .media-list li p.size{font-size:12px;color:#95
 div[data-control="media-manager"] .media-list li .image-placeholder{position:relative}
 div[data-control="media-manager"] .media-list li .image-placeholder i{padding-top:0;padding-left:2px}
 div[data-control="media-manager"] .media-list li .image-placeholder[data-loading] i{display:none}
-div[data-control="media-manager"] .media-list li .image-placeholder[data-loading]:after{background-image:url('../img/loader-transparent.svg');background-position:50% 50%;content:' ';-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite;background-size:28px 28px;position:absolute;width:28px;height:28px;top:50%;left:50%;margin-top:-14px;margin-left:-14px}
+div[data-control="media-manager"] .media-list li .image-placeholder[data-loading]:after{background-image:url('../images/loader-transparent.svg');background-position:50% 50%;content:' ';-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite;background-size:28px 28px;position:absolute;width:28px;height:28px;top:50%;left:50%;margin-top:-14px;margin-left:-14px}
 div[data-control="media-manager"] .media-list li i.icon-chain-broken{padding:0;color:#bdc3c7}
 div[data-control="media-manager"] .media-list li[data-item-type=folder] i{color:#4ea5e0}
 div[data-control="media-manager"] .media-list.list li{height:75px;width:260px;border:1px solid #ecf0f1;background:#f6f8f9}
@@ -40,7 +40,7 @@ div[data-control="media-manager"] .media-list.list h4 a{right:15px}
 div[data-control="media-manager"] .media-list.tiles li{width:167px;margin-bottom:25px}
 div[data-control="media-manager"] .media-list.tiles .icon-wrapper{width:167px}
 div[data-control="media-manager"] .media-list.tiles li .image-placeholder{width:165px;height:165px}
-div[data-control="media-manager"] .media-list.tiles li .image-placeholder[data-loading]:after{background-image:url('../img/loader-transparent.svg');background-position:50% 50%;content:' ';-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite;background-size:55px 55px;position:absolute;width:55px;height:55px;top:50%;left:50%;margin-top:-27.5px;margin-left:-27.5px}
+div[data-control="media-manager"] .media-list.tiles li .image-placeholder[data-loading]:after{background-image:url('../images/loader-transparent.svg');background-position:50% 50%;content:' ';-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite;background-size:55px 55px;position:absolute;width:55px;height:55px;top:50%;left:50%;margin-top:-27.5px;margin-left:-27.5px}
 div[data-control="media-manager"] .media-list.tiles li .icon-container{width:167px;height:167px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;border:1px solid #ecf0f1;overflow:hidden;background:#f6f8f9}
 div[data-control="media-manager"] .media-list.tiles li .icon-container i{font-size:55px}
 div[data-control="media-manager"] .media-list.tiles li .icon-container p{font-family:sans-serif}
@@ -53,7 +53,7 @@ div[data-control="media-manager"] [data-control="sidebar-labels"]{word-wrap:brea
 div[data-control="media-manager"] .sidebar-image-placeholder-container{display:table;width:100%}
 div[data-control="media-manager"] .sidebar-image-placeholder{display:table-cell;height:225px;position:relative;vertical-align:middle;text-align:center;border-bottom:1px solid #ecf0f1}
 div[data-control="media-manager"] .sidebar-image-placeholder[data-loading]{background:#ecf0f1}
-div[data-control="media-manager"] .sidebar-image-placeholder[data-loading]:after{background-image:url('../img/loader-transparent.svg');background-position:50% 50%;content:' ';-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite;background-size:62px 62px;position:absolute;width:62px;height:62px;top:50%;left:50%;margin-top:-31px;margin-left:-31px}
+div[data-control="media-manager"] .sidebar-image-placeholder[data-loading]:after{background-image:url('../images/loader-transparent.svg');background-position:50% 50%;content:' ';-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite;background-size:62px 62px;position:absolute;width:62px;height:62px;top:50%;left:50%;margin-top:-31px;margin-left:-31px}
 div[data-control="media-manager"] .sidebar-image-placeholder i.icon-chain-broken,div[data-control="media-manager"] .sidebar-image-placeholder i.icon-crop,div[data-control="media-manager"] .sidebar-image-placeholder i.icon-asterisk,div[data-control="media-manager"] .sidebar-image-placeholder i.icon-level-up{color:#bdc3c7;font-size:55px}
 div[data-control="media-manager"] .sidebar-image-placeholder.no-border{border-bottom:none}
 div[data-control="media-manager"] .sidebar-image-placeholder p{font-size:12px;margin:10px;line-height:160%;color:#bdc3c7;margin-top:25px}
