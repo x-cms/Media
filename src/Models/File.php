@@ -20,10 +20,6 @@ class File extends Model
 
     protected $guarded = [];
 
-    public $data = null;
-
-    public static $imageExtensions = ['jpg', 'jpeg', 'png', 'gif'];
-
     protected $autoMimeTypes = [
         'docx' => 'application/msword',
         'xlsx' => 'application/excel',
@@ -33,6 +29,15 @@ class File extends Model
         'jpeg' => 'image/jpeg',
         'pdf'  => 'application/pdf'
     ];
+
+    public $data = null;
+
+    public static $imageExtensions = ['jpg', 'jpeg', 'png', 'gif'];
+
+    public function attachment()
+    {
+        return $this->morphTo();
+    }
 
     /**
      * @param \Symfony\Component\HttpFoundation\File\UploadedFile $uploadedFile
