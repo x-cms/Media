@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 use Symfony\Component\HttpFoundation\File\File as FileObj;
 use Storage;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
+use URL;
 use Xcms\Media\Support\BrokenImage;
 use Xcms\Media\Support\Resizer;
 
@@ -172,7 +173,7 @@ class File extends Model
 
     public function getPath()
     {
-        return $this->getPublicPath() . $this->getPartitionDirectory() . $this->disk_name;
+        return $this->getPublicPath() . '/' . $this->getPartitionDirectory() . $this->disk_name;
     }
 
     public function getLocalPath()
@@ -554,10 +555,10 @@ class File extends Model
     public function getPublicPath()
     {
         if ($this->isPublic()) {
-            return 'http://localhost/uploads/public/';
+            return url('storage/uploads/public/');
         }
         else {
-            return 'http://localhost/uploads/protected/';
+            return url('storage/uploads/protected/');
         }
     }
 

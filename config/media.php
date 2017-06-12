@@ -6,7 +6,7 @@ return [
         'uploads' => [
             'disk'   => 'local',
             'folder' => 'public/uploads',
-            'path'   => '/storage/app/public/uploads',
+            'path'   => '/storage/uploads',
         ],
 
         'media' => [
